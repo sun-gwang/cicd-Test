@@ -1,0 +1,11 @@
+server:
+    port: 8080
+    servlet:
+        context-path: /cicd-Test
+
+spring:
+    application:
+        name: cicd-Test
+
+    thymeleaf:
+        prefix: classpath:/templates
