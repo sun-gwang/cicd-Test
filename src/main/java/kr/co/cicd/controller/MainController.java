@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 public class MainController {
 
     private final BuildProperties buildProperties;
+
     @GetMapping("/")
     public String index(Model model){
         String version = buildProperties.getVersion();

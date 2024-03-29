@@ -5,7 +5,7 @@ plugins {
 }
 
 group = 'kr.co.cicd'
-version = '0.0.1-SNAPSHOT'
+version = '0.0.3-SNAPSHOT'
 
 java {
     sourceCompatibility = '17'
@@ -33,6 +33,11 @@ dependencies {
 
 tasks.named('test') {
     useJUnitPlatform()
+}
+
+// xxx-plain.jar 생성을 금지시키는 설정
+tasks.named('jar') {
+    enabled = false
 }
 
 springBoot {
